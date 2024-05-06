@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#FDFCFE]">
+    <button class="mt-20 mx-96 bg-[#F4F0FE] rounded-2xl border-solid border border-[#C2B5F5] font-medium text-[#402060] px-3">Total: <span id="allprice">0</span> $</button>
+    <div class="flex gap-6 justify-center my">
+        <!-- ITEM 1 -->
+        <div class="my-10 bg-[#F4F0FE] size-60 rounded-xl drop-shadow-3xl border-solid border border-[#C2B5F5]" id="item">
+            <div class="flex">
+            <img src="./SVG/btc.svg" class="size-20 p-5 mr-3" alt="">
+            <button class="size-8 mt-5 ml-24 bg-[#D4CAFE] rounded-full p-1" id="heart"><img src="./heart-2.png" class="" id="heart"></button>
+            </div>
+            <h1 class="ml-5 text-lg font-light text-[#AA99EC]">Bitcoin</h1>
+            <h1 class="ml-5 text-3xl font-bold text-[#402060]" id="price"><span>$</span> 62 869</h1>
+            <h1 class="ml-5 mt-1 text-sm font-light text-[#AA99EC]">BTC</h1>
+            <div class="flex mt-5">
+                <button class="size-8 ml-5 bg-[#E5484D] rounded-full p-1" id="moins"><img src="./moins.png" alt=""></button>
+                <button class="size-8 ml-2 bg-[#0090FF] rounded-full p-1" id="plus"><img src="./plus-4.png" alt=""></button>
+                <button class="size-8 ml-14 mr-2" id="delete"><img src="./trash.png" onclick="supp()"></button>
+                <button class="ml- mr-5 rounded-full bg-[#D4CAFE] size-8 text-[#402060]" id="total">0</button>
+            </div>
+        </div>
+        <!-- ITEM 2  -->
+        <div class="my-10 bg-[#F4F0FE] size-60 rounded-xl drop-shadow-3xl border-solid border border-[#C2B5F5]" id="item1">
+            <div class="flex">
+                <img src="./SVG/eth.svg" class="size-20 p-5 mr-3" alt="">
+                <button class="size-8 mt-5 ml-24 bg-[#D4CAFE] rounded-full p-1" id="heart1"><img src="./heart-2.png" class=""></button>
+            </div>
+            <h1 class="ml-5 text-lg font-light text-[#AA99EC]">Ethereum</h1>
+            <h1 class="ml-5 text-3xl font-bold text-[#402060]" id="price_2"><span>$</span> 3 176,70</h1>
+            <h1 class="ml-5 mt-1 text-sm font-light text-[#AA99EC]">ETH</h1>
+            <div class="flex mt-5">
+                <button class="size-8 ml-5 bg-[#E5484D] rounded-full p-1" id="moins1"><img src="./moins.png" alt=""></button>
+                <button class="size-8 ml-2 bg-[#0090FF] rounded-full p-1" id="plus1"><img src="./plus-4.png" alt=""></button>
+                <button class="size-8 ml-14 mr-2 bg-[]" id="delete"><img src="./trash.png" onclick="supp1()"></button>
+                <button class="ml- mr-5 rounded-full bg-[#D4CAFE] size-8 text-[#402060]" id="total1">0</button>
+            </div>
+        </div>
+        <!-- ITEM 3  -->
+        <div class="my-10 bg-[#F4F0FE] size-60 rounded-xl drop-shadow-3xl border-solid border border-[#C2B5F5]" id="item2">
+            <div class="flex">
+                <img src="./SVG/ada.svg" class="size-20 p-5 mr-3" alt="">
+                <button class="size-8 mt-5 ml-24 bg-[#D4CAFE] rounded-full p-1" id="heart2"><img src="./heart-2.png" class="" id=""></button>
+                </div>
+            <h1 class="ml-5 text-lg font-light text-[#AA99EC]">Cardano</h1>
+            <h1 class="ml-5 text-3xl font-bold text-[#402060]" id="price"><span>$</span> 0,46</h1>
+            <h1 class="ml-5 mt-1 text-sm font-light text-[#AA99EC]">ADA</h1>
+            <div class="flex mt-5">
+                <button class="size-8 ml-5 bg-[#E5484D] rounded-full p-1" id="moins2"><img src="./moins.png" alt=""></button>
+                <button class="size-8 ml-2 bg-[#0090FF] rounded-full p-1" id="plus2"><img src="./plus-4.png" alt=""></button>
+                <button class="size-8 ml-14 mr-2" id="delete"><img src="./trash.png" onclick="supp2()"></button>
+                <button class="ml- mr-5 rounded-full bg-[#D4CAFE] size-8 text-[#402060]" id="total2">0</button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
